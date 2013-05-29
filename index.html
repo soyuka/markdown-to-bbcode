@@ -185,32 +185,33 @@ function convert()
         console.log('converted');
 }
 </script>
-	</head>
-	<body>
-        <div class="instructions">
-            <h1>Markdown to BBCode (Feral) Converter</h1>
-            <div style="font-size:0.8em;">
-            Paste your Markdown into the left, Feral FAQ formatted BBCode appears on the right. Here is a link to the <a href="http://konichiwa.celadon.feralhosting.com/converter/bbcodetomarkdown/">bbcode to markdown</a> converter<br/>
-            <a href="https://github.com/feralhosting/BBCode-To-Markdown-Converter">Fork/Contribute to this version</a>&nbsp;&nbsp;<a href="http://github.com/JonDum/BBCode-To-Markdown-Converter">Credits</a>
-            <br/>Indented code will have the space/tabs stripped. You have to manually apply [code] tags to these. Github style  ``` code will be replaced correctly.</div> 
+    </head>
+        <body>
+            <div class="instructions">
+                <h1>Markdown to BBCode (Feral) Converter</h1>
+                <div style="font-size:0.8em;">
+                    Paste your Markdown into the left, Feral FAQ formatted BBCode appears on the right. Here is a link to the <a href="http://konichiwa.celadon.feralhosting.com/converter/bbcodetomarkdown/">bbcode to markdown</a> converter<br/>
+                    <a href="https://github.com/feralhosting/BBCode-To-Markdown-Converter">Fork/Contribute to this version</a>&nbsp;&nbsp;<a href="http://github.com/JonDum/BBCode-To-Markdown-Converter">Credits</a>
+                    <br/>Indented code will have the space/tabs stripped. You have to manually apply [code] tags to these. Github style  ``` code will be replaced correctly.
+                </div> 
             </div>
-		<div class="container">
-			<table border="0">
-				<tr>
-					<td>
-						<div class="ta_container left">
-							<textarea id="left_ta" value="" onChange="convert()" onKeyUp="convert()"></textarea>
-						</div>
-					</td>
-					<td class="middle_td">
-					</td>
-					<td>
-						<div class="ta_container right">
-							<textarea id="right_ta"></textarea>
-						</div>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</body>
+            <div class="container">
+                <table border="0">
+                    <tr>
+                        <td>
+                            <div class="ta_container left">
+                                <textarea id="left_ta" value="" onChange="convert()" onKeyUp="convert()"></textarea>
+                            </div>
+                        </td>
+                        <td class="middle_td">
+                        </td>
+                        <td>
+                            <div class="ta_container right">
+                                <textarea id="right_ta"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    </body>
 </html>
