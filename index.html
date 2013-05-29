@@ -45,7 +45,7 @@
 			.ta_container
 			{
 				width: 97%;
-				height: 95%;                
+				height: 95%;
 				box-sizing: border-box;
 				-webkit-box-sizing:border-box;
 				-moz-box-sizing: border-box;
@@ -152,53 +152,48 @@
 			
 		</style>
 	
-		<script type="text/javascript" charset="utf-8">
-						
-			function convert()
-			{
-				var left = document.getElementById("left_ta");
-				var right = document.getElementById("right_ta");
-		 
-				var left_value = left.value;
-				
-				//general Markdown conversion
-				left_value = left_value
-				.replace(/^[#]{4,4}\s*(.*[^\s])\s*####\n?$/gmi, "[h4]$1[/h4]") // h4
-				.replace(/^[#]{4,4}\s*(.*)\n?$/gmi, "[h4]$1[/h4]") // h4
-				//
-				.replace(/^[#]{3,3}\s*(.*[^\s])\s*###\n?$/gmi, "[h3]$1[/h3]") // h3
-				.replace(/^[#]{3,3}\s?(.*)\n?$/gmi, "[h3]$1[/h3]") // h3
-				//
-				.replace(/^[#]{2,2}\s*(.*[^\s])\s*##\n?$/gmi, "[h2]$1[/h2]") // h2
-				.replace(/^[#]{2,2}\s*(.*)\n?$/gmi, "[h2]$1[/h2]") // h2
-				//					
-				.replace(/^\`{3,3}(.*)\n((?:.|\n)+?)\n\`{3,3}\n?$/gmi, "[code]$2[/code]")	// back ticks
-				.replace(/\`([^\`].*?)\`/gmi, "[i]$1[/i]")  // back ticks
-				.replace(/^\t|[ ]{4,4}(.*)/gmi, "$1")  //code; strips tabs
-				//
-				.replace(/^!\[.*?\]\((.*?)\)$/gmi,'[img]$1[/img]') //image
-				//
-				.replace(/\[([^\]]+)\]\(([^)]+)\)/gmi,'[url=$2]$1[/url]') // url
-				//
-				.replace(/\*\*([^\*].*?)\*\*/gmi, "[b]$1[/b]") // bold
-				.replace(/\*([^\*].*?)\*/gmi, "[i]$1[/i]")	// italic
+<script type="text/javascript" charset="utf-8">
 
-				right.value = left_value;	
-				
-				console.log('converted');
-		
-			}
-			
-		</script>
+function convert()
+{
+    var left = document.getElementById("left_ta");
+    var right = document.getElementById("right_ta");
+    var left_value = left.value;
+        //general Markdown conversion
+        left_value = left_value
+        .replace(/^[#]{4,4}\s*(.*[^\s])\s*####\n?$/gmi, "[h4]$1[/h4]") // h4
+        .replace(/^[#]{4,4}\s*(.*)\n?$/gmi, "[h4]$1[/h4]") // h4
+        //
+        .replace(/^[#]{3,3}\s*(.*[^\s])\s*###\n?$/gmi, "[h3]$1[/h3]") // h3
+        .replace(/^[#]{3,3}\s?(.*)\n?$/gmi, "[h3]$1[/h3]") // h3
+        //
+        .replace(/^[#]{2,2}\s*(.*[^\s])\s*##\n?$/gmi, "[h2]$1[/h2]") // h2
+        .replace(/^[#]{2,2}\s*(.*)\n?$/gmi, "[h2]$1[/h2]") // h2
+        //
+        .replace(/^\t|[ ]{4,4}(.*)/gmi, "$1")  //code; strips tabs
+        .replace(/^\`{3,3}(.*)\n((?:.|\n)+?)\n\`{3,3}\n?$/gmi, "[code]$2[/code]")	// back ticks
+        .replace(/\`([^\`].*?)\`/gmi, "[i]$1[/i]")  // back ticks
+        //
+        .replace(/^!\[.*?\]\((.*?)\)$/gmi,'[img]$1[/img]') //image
+        //
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/gmi,'[url=$2]$1[/url]') // url
+        //
+        .replace(/\*\*([^\*].*?)\*\*/gmi, "[b]$1[/b]") // bold
+        .replace(/\*([^\*].*?)\*/gmi, "[i]$1[/i]")	// italic
+        //
+        right.value = left_value;	
+        console.log('converted');
+}
+</script>
 	</head>
 	<body>
-		<div class="instructions">
-			<h1>Markdown to BBCode (Feral) Converter</h1>
-			<div style="font-size:0.8em;">
-			Paste your Markdown into the left, Feral FAQ formatted BBCode appears on the right. Here is a link to the <a href="http://konichiwa.celadon.feralhosting.com/converter/bbcodetomarkdown/">bbcode to markdown</a> converter<br/>	
-			<a href="https://github.com/feralhosting/BBCode-To-Markdown-Converter">Fork/Contribute to this version</a>&nbsp;&nbsp;<a href="http://github.com/JonDum/BBCode-To-Markdown-Converter">Credits</a>
-			<br/>Indented code will have the space/tabs stripped. You have to manually apply [code] tags to these. Github style  ``` code will be replaced correctly.</div> 
-			</div>
+        <div class="instructions">
+            <h1>Markdown to BBCode (Feral) Converter</h1>
+            <div style="font-size:0.8em;">
+            Paste your Markdown into the left, Feral FAQ formatted BBCode appears on the right. Here is a link to the <a href="http://konichiwa.celadon.feralhosting.com/converter/bbcodetomarkdown/">bbcode to markdown</a> converter<br/>
+            <a href="https://github.com/feralhosting/BBCode-To-Markdown-Converter">Fork/Contribute to this version</a>&nbsp;&nbsp;<a href="http://github.com/JonDum/BBCode-To-Markdown-Converter">Credits</a>
+            <br/>Indented code will have the space/tabs stripped. You have to manually apply [code] tags to these. Github style  ``` code will be replaced correctly.</div> 
+            </div>
 		<div class="container">
 			<table border="0">
 				<tr>
