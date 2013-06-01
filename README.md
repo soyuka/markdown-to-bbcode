@@ -57,5 +57,7 @@ Properly formatted markdown to bbcode. The core tags like b,i,h2,h3,code,img,url
 
 [google](www.google.co.uk)
 
+[www.google.co.uk](www.google.co.uk "google")
+
 ![let me explain](https://github.com/feralhosting/markdown-to-bbcode/letmeexplain.png)
 ```
