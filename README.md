@@ -75,37 +75,3 @@ Title
 
 ![let me explain](https://github.com/feralhosting/markdown-to-bbcode/letmeexplain.png)
 ```
-
-
-
-
-
-##
-######Hello
-###### Hello ######
-######Hello######
-
-	```
-	something
-	something
-	something
-	```
-
-***something***
-
-**something**
-
-*somethin*
-
-`something`
-
-**something** in the *something* went `something` like this
-
-**something** [google](www.google.co.uk)  *something* `something` like this
-
-[google](www.google.co.uk)
-
-[www.google.co.uk](www.google.co.uk "google")
-
-![let me explain](https://github.com/feralhosting/markdown-to-bbcode/letmeexplain.png)
-```
