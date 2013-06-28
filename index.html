@@ -29,8 +29,8 @@ var left_value = left.value;
     //
     .replace(/\[(.+?)\]\((.+?)(\s".*")?\)/gmi,'[url=$2]$1[/url]') // url
     //
-    .replace(/^(.+)(\n|\r\n)(\x3D+\s*(\n|\r\n)?)$/gmi, "[h1]$1[/h1]") // h1
-    .replace(/^(.+)(\n|\r\n)(\x2D+\s*(\n|\r\n)?)$/gmi, "[h2]$1[/h2]") // h2
+    .replace(/^(.+)(\n|\r\n)([=]{3,3}\s*(\n|\r\n)?)$/gmi, "[h1]$1[/h1]") // h1
+    .replace(/^(.+)(\n|\r\n)([-]{3,3}\s*(\n|\r\n)?)$/gmi, "[h2]$1[/h2]") // h2
     //
     .replace(/^[#]{6,6}\s*(.*[^\s])\s*[#]{6,6}\n?$/gmi, "[h6]$1[/h6]") // h4
     .replace(/^[#]{6,6}\s*(.*)\n?$/gmi, "[h6]$1[/h6]") // h4
